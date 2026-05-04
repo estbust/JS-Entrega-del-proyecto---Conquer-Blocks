@@ -184,3 +184,10 @@ input, select {
 }
 
 .close-btn:hover { color: white; }
+
+.error {
+    text-align: center;
+    padding: 2rem;
+    color: #d63d2e;
+    font-size: 2rem;
+}
