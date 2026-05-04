@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master JS - Entrega de proyecto | Esteban Bahamón</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header class="hero">
+        <img src="rickymorty-logo.svg" alt="Logo de Rick and Morty" class="logo">
+        <h1>Explorador de Rick y Morty</h1>
+        <div class="filters">
+            <input type="text" id="search-input" placeholder="Buscar personaje...">
+            <select id="status-filter">
+                <option value="">Todos los estados</option>
+                <option value="alive">Vivo</option>
+                <option value="dead">Muerto</option>
+                <option value="unknown">Desconocido</option>
+            </select>
+        </div>
+    </header>
+    
+    <div id="loading-message" class="cargando hidden">
+        <h3>Cargando datos... ◌</h3>
+    </div>
+
+    <main class="container">
+        <div id="characters-container" class="grid-layout">
+        </div>
+    </main>
+
+    <button id="load-more" class="load-more">Cargar más</button>
+
+    <div id="character-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-modal" class="close-btn">&times;</span>
+            <div id="modal-info">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
